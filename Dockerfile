@@ -1,5 +1,4 @@
-FROM registry.openanolis.cn/openanolis/nginx:1.14.1-8.6
-
+FROM anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/nginx
 
 # 安装 fcgiwrap spawn-fcgi 和其他依赖
 RUN yum install -y epel-release && yum install -y fcgiwrap spawn-fcgi && yum clean all
